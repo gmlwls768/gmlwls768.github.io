@@ -148,9 +148,6 @@ export default function Portfolio() {
                     "메모를 남겨 일기에 작성시 참고할 수 있는 기능",
                     "Nginx, Docker, deploy script를 이용한 개방 서버 배포 구현",
                     "Nginx, Let's encrypt(certbot)을 이용한 HTTPS 연결 설정",
-                    "운영진을 제외한 서비스 이용자 수 집계 기능",
-                    "Github Actions, Nginx, Docker, AWS의 EC2, S3, CodeDeploy를 이용한 blue-green 전략의 무중단 배포 구현",
-                    "AWS의 Elastic Load Balancer, Route 53을 이용한 HTTPS 연결 설정",
                   ]}
                   skills={[
                     "Spring Boot",
