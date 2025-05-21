@@ -144,10 +144,12 @@ export default function Portfolio() {
                     "OAuth 2.0을 이용한 간편 회원가입 및 간편 로그인 기능",
                     "Spring Security, JWT, Redis를 이용한 사용자 인증 시스템",
                     "사용자 정보 조회 기능",
-                    "태그, 친구, 그룹을 이용하여 일기를 분류, 검색, 저장할 수 있는 일기 기능",
-                    "메모를 남겨 일기에 작성시 참고할 수 있는 기능",
+                    "메모 CRD API",
+                    "태그 및 친구 CRUD API",
+                    "친구 관계를 활용한 파티(그룹) CRUD API",
+                    "태그·친구·파티 정보를 연동한 일기 CRUD API",
                     "Nginx, Docker, deploy script를 이용한 개발 서버 배포 구현",
-                    "Nginx, Let's encrypt(certbot)을 이용한 HTTPS 연결 설정",
+                    "Let's encrypt을 이용한 HTTPS 연결 설정",
                   ]}
                   skills={[
                     "Spring Boot",
