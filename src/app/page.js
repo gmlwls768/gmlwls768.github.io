@@ -146,7 +146,7 @@ export default function Portfolio() {
                     "사용자 정보 조회 기능",
                     "태그, 친구, 그룹을 이용하여 일기를 분류, 검색, 저장할 수 있는 일기 기능",
                     "메모를 남겨 일기에 작성시 참고할 수 있는 기능",
-                    "Nginx, Docker, deploy script를 이용한 개방 서버 배포 구현",
+                    "Nginx, Docker, deploy script를 이용한 개발 서버 배포 구현",
                     "Nginx, Let's encrypt(certbot)을 이용한 HTTPS 연결 설정",
                   ]}
                   skills={[
