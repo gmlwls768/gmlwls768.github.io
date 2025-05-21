@@ -158,7 +158,6 @@ export default function Portfolio() {
                     "MySQL",
                     "Redis",
                     "Docker",
-                    "Github Actions",
                     "OAuth 2.0",
                     "JWT",
                   ]}
