@@ -144,10 +144,7 @@ export default function Portfolio() {
                     "OAuth 2.0을 이용한 간편 회원가입 및 간편 로그인 기능",
                     "Spring Security, JWT, Redis를 이용한 사용자 인증 시스템",
                     "사용자 정보 조회 기능",
-                    "메모 CRD API",
-                    "태그 및 친구 CRUD API",
-                    "친구 관계를 활용한 파티(그룹) CRUD API",
-                    "태그·친구·파티 정보를 연동한 일기 CRUD API",
+                    "Restful한 API 구현",
                     "Nginx, Docker, deploy script를 이용한 개발 서버 배포 구현",
                     "Let's encrypt을 이용한 HTTPS 연결 설정",
                   ]}
@@ -183,6 +180,7 @@ export default function Portfolio() {
                   role="백엔드 개발"
                   features={[
                     "OAuth 2.0을 이용한 간편 회원가입 및 간편 로그인 기능",
+                    "Restful한 API 구현",
                     "Github Actions, Nginx, Docker를 이용한 온프레미스에서의 blue-green 전략의 무중단 배포 구현",
                     "Nginx, Let's encrypt(certbot)을 이용한 HTTPS 연결 설정",
                     "VPN 환경 구축",
@@ -307,6 +305,7 @@ export default function Portfolio() {
               <h2 className="pb-2 text-2xl font-bold border-b">자격증</h2>
               <div className="space-y-2">
                 <CertificateCard name="SQL 개발자(SQLD)" date="2025.04" />
+                <CertificateCard name="정보처리기사" date="2025.06" />
               </div>
             </section>
 
