@@ -37,7 +37,7 @@ export default function Portfolio() {
                 {/* Profile Image */}
                 <div className="relative flex-shrink-0 w-40 mx-auto overflow-hidden rounded-lg h-52 md:mx-0">
                   <Image
-                    src="assets/profileImage.jpg"
+                    src="assets/profileImage.png"
                     alt="Profile"
                     fill
                     className="object-cover"
@@ -100,8 +100,8 @@ export default function Portfolio() {
                     서버에 대한 로망이 있어 NAS를 직접 구성해 사용해보며 서버에
                     대한 흥미를 키워왔습니다.
                     <br />
-                    최근에는 Proxmox 가상화 OS를 활용해 홈서버를 구축하고
-                    있으며 이를 통해 자연스럽게 리눅스 환경과 네트워크,
+                    최근에는 Proxmox 가상화 OS를 활용해 홈서버를 구축하고 있으며
+                    이를 통해 자연스럽게 리눅스 환경과 네트워크,
                     데브옵스(DevOps)에 대한 관심도 깊어졌습니다.
                     <br />
                     이러한 경험을 바탕으로 개발에 필요한 네트워크 환경에
@@ -116,12 +116,16 @@ export default function Portfolio() {
                     [소통을 중요시하는 개발자]
                   </p>
                   <p>
-                    효율적인 개발을 위해서는 모든 구성원이 요구사항을 명확히 이해하고 이를 기반으로 일관된 방향성을 유지하는 것이 중요하다고 생각합니다.
+                    효율적인 개발을 위해서는 모든 구성원이 요구사항을 명확히
+                    이해하고 이를 기반으로 일관된 방향성을 유지하는 것이
+                    중요하다고 생각합니다.
                     <br />
-                    여러 프로젝트에서 프론트엔드와 백엔드 역할을 모두 경험하면서 소통이 원활했던 경우와 그렇지 않았던 경우를 모두 겪어보았습니다.
-                    <br/>
-                    그 경험을 통해 역할 간 원활한 커뮤니케이션이 개발 효율에 직결된다는 점을 깨달았고
-                    각 역할 간 어떤 방식으로 소통해야 협업이 원활한지도 자연스럽게 익히게 되었습니다.
+                    여러 프로젝트에서 프론트엔드와 백엔드 역할을 모두 경험하면서
+                    소통이 원활했던 경우와 그렇지 않았던 경우를 모두
+                    겪어보았습니다.
+                    <br />그 경험을 통해 역할 간 원활한 커뮤니케이션이 개발
+                    효율에 직결된다는 점을 깨달았고 각 역할 간 어떤 방식으로
+                    소통해야 협업이 원활한지도 자연스럽게 익히게 되었습니다.
                   </p>
                 </div>
               </div>
