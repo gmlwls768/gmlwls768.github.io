@@ -2,14 +2,24 @@
 // view: "dev" = 개발자, "sys" = 시스템 엔지니어
 
 export const views = [
-  { id: "dev", label: "개발자", title: "Backend Developer" },
-  { id: "sys", label: "시스템 엔지니어", title: "System Engineer" },
+  {
+    id: "dev",
+    label: "개발자",
+    title: "Backend Developer",
+    tagline: "네트워크와 인프라까지 이해하는 백엔드 개발자입니다.",
+  },
+  {
+    id: "sys",
+    label: "시스템 엔지니어",
+    title: "System Engineer",
+    tagline: "직접 구축하고 운영하며 배우는 시스템 엔지니어입니다.",
+  },
 ];
 
 export const about = {
   dev: [
     {
-      title: "[네트워크를 좋아하는 개발자]",
+      title: "네트워크를 좋아하는 개발자",
       lines: [
         "백엔드 개발에 있어서 네트워크는 핵심 요소 중 하나라고 생각합니다.",
         "서버에 대한 로망이 있어 NAS를 직접 구성해 사용해보며 서버에 대한 흥미를 키워왔습니다.",
@@ -18,7 +28,7 @@ export const about = {
       ],
     },
     {
-      title: "[소통을 중요시하는 개발자]",
+      title: "소통을 중요시하는 개발자",
       lines: [
         "효율적인 개발을 위해서는 모든 구성원이 요구사항을 명확히 이해하고 이를 기반으로 일관된 방향성을 유지하는 것이 중요하다고 생각합니다.",
         "여러 프로젝트에서 프론트엔드와 백엔드 역할을 모두 경험하면서 소통이 원활했던 경우와 그렇지 않았던 경우를 모두 겪어보았습니다.",
@@ -26,7 +36,7 @@ export const about = {
       ],
     },
     {
-      title: "[필요한 도구를 직접 만들어 쓰는 개발자]",
+      title: "필요한 도구를 직접 만들어 쓰는 개발자",
       lines: [
         "불편한 점이 보이면 직접 프로그램으로 만들어 해결합니다.",
         "개인 프로젝트는 AI 코딩 도구를 적극적으로 활용해 기획부터 배포, 릴리스 관리까지 혼자 진행하고 있습니다.",
@@ -36,7 +46,7 @@ export const about = {
   ],
   sys: [
     {
-      title: "[직접 운영해 보며 배우는 엔지니어]",
+      title: "직접 운영해 보며 배우는 엔지니어",
       lines: [
         "서버에 대한 로망으로 NAS를 구성해 본 것을 시작으로, 지금은 Proxmox 가상화 환경 위에 여러 VM과 컨테이너를 올려 홈서버를 직접 운영하고 있습니다.",
         "스토리지, 네트워크, 백업, 업그레이드, 장애 대응까지 운영에 필요한 일을 처음부터 끝까지 직접 겪어 보았습니다.",
@@ -44,7 +54,7 @@ export const about = {
       ],
     },
     {
-      title: "[원인을 끝까지 확인하는 엔지니어]",
+      title: "원인을 끝까지 확인하는 엔지니어",
       lines: [
         "문제가 생기면 증상을 덮는 대신 원인을 좁혀 나갑니다.",
         "파일이 간헐적으로 손상되는 문제를 해시 비교로 추적해 메모리의 특정 영역 결함임을 확인하고 해당 영역을 사용하지 않도록 조치한 경험이 있습니다.",
@@ -52,7 +62,7 @@ export const about = {
       ],
     },
     {
-      title: "[반복 작업은 자동화하는 엔지니어]",
+      title: "반복 작업은 자동화하는 엔지니어",
       lines: [
         "한 번 손으로 한 작업은 스크립트와 예약 작업으로 옮겨 다시 손대지 않도록 만듭니다.",
         "팀 프로젝트에서는 배포와 인프라를 맡아 무중단 배포, HTTPS, VPN, 모니터링을 구성했고 개발자가 배포를 신경 쓰지 않아도 되는 환경을 만드는 데 집중했습니다.",
@@ -65,7 +75,8 @@ export const about = {
 // 개발자 화면은 둘 다 보여 주고, 시스템 엔지니어 화면은 infra 가 있는 프로젝트만 infra 로 보여 줍니다.
 export const projects = [
   {
-    title: "Proxmox 기반 홈서버 구축 및 운영",
+    name: "홈서버 구축 · 운영",
+    summary: "Proxmox 가상화 위에서 NAS, 미디어 서버, 개발 환경을 직접 운영하는 홈서버",
     team: "개인 프로젝트",
     period: "2025 - 현재 운영 중",
     role: "설계, 구축, 운영",
@@ -93,8 +104,10 @@ export const projects = [
     ],
   },
   {
-    title: "추적 기능을 갖춘 일괄 다운로더 [TraceDownloader]",
-    team: "개인 프로젝트 (AI 코딩 도구 활용)",
+    name: "TraceDownloader",
+    summary: "받은 기록을 추적해 새로 올라온 것만 이어 받는 일괄 다운로더",
+    team: "개인 프로젝트",
+    note: "AI 코딩 도구 활용",
     period: "2026.07 - 현재 진행중",
     role: "기획, 개발, 배포",
     features: [
@@ -117,8 +130,10 @@ export const projects = [
     ],
   },
   {
-    title: "헤드셋 물리 음소거 상태를 보여 주는 Windows 배지 [MicBadge]",
-    team: "개인 프로젝트 (AI 코딩 도구 활용)",
+    name: "MicBadge",
+    summary: "헤드셋 물리 음소거 상태를 화면에 보여 주는 Windows 배지",
+    team: "개인 프로젝트",
+    note: "AI 코딩 도구 활용",
     period: "2026.10",
     role: "기획, 개발, 배포",
     only: "dev",
@@ -135,9 +150,9 @@ export const projects = [
     ],
   },
   {
-    title:
-      "태그, 친구, 그룹을 이용하여 일기를 분류, 검색, 저장할 수 있는 일기 서비스 [mollo]",
-    team: "팀원 수 : 2명(프론트엔드 개발 1명, 백엔드 개발 1명)",
+    name: "mollo",
+    summary: "태그, 친구, 그룹을 이용하여 일기를 분류, 검색, 저장할 수 있는 일기 서비스",
+    team: "2명 (프론트엔드 1, 백엔드 1)",
     period: "2025.04 - 2025.08",
     role: "백엔드 개발",
     features: [
@@ -162,8 +177,9 @@ export const projects = [
     repositories: [{ url: "https://github.com/Team-mollo", name: "mollo-team" }],
   },
   {
-    title: "학교 재학생의 편의를 위한 시간표 서비스 [학점 가방]",
-    team: "팀원 수 : 5명(프론트엔드 개발 3명, 백엔드 개발 2명)",
+    name: "학점 가방",
+    summary: "학교 재학생의 편의를 위한 시간표 서비스",
+    team: "5명 (프론트엔드 3, 백엔드 2)",
     period: "2025.02 - 2025.04",
     role: "백엔드 개발",
     features: [
@@ -195,8 +211,9 @@ export const projects = [
     ],
   },
   {
-    title: "환자와 보호자를 위한 원격 헬스케어 서비스 [만수무강]",
-    team: "팀원 수 : 5명(프론트엔드(웹) 개발 2명, 백엔드 개발 2명, 프론트엔드(안드로이드) 개발 1명)",
+    name: "만수무강",
+    summary: "환자와 보호자를 위한 원격 헬스케어 서비스",
+    team: "5명 (웹 2, 백엔드 2, 안드로이드 1)",
     period: "2024.07 - 2024.09",
     role: "프론트엔드(안드로이드) 담당",
     only: "dev",
@@ -219,8 +236,9 @@ export const projects = [
     ],
   },
   {
-    title: "다이어터, 운동인을 위한 식단, 헬스케어 서비스[health care service]",
-    team: "팀원 수 : 3명(프론트엔드 개발 1명, 백엔드 개발 2명)",
+    name: "health care service",
+    summary: "다이어터, 운동인을 위한 식단, 헬스케어 서비스",
+    team: "3명 (프론트엔드 1, 백엔드 2)",
     period: "2023.10 - 2023.12",
     role: "팀장, 백엔드 담당",
     only: "dev",
@@ -241,37 +259,31 @@ export const projects = [
   },
 ];
 
-// icon 은 page.js 의 skillIcons 에 있는 이름
 export const skills = {
   dev: [
-    { title: "Backend", icon: "terminal", skills: ["Java", "Spring Boot", "Spring Security", "Python", "Node.js"] },
-    { title: "Database", icon: "database", skills: ["MySQL", "MSSQL", "Redis"] },
+    { title: "Backend", skills: ["Java", "Spring Boot", "Spring Security", "Python", "Node.js"] },
+    { title: "Database", skills: ["MySQL", "MSSQL", "Redis"] },
     {
       title: "DevOps",
-      icon: "cloud",
       skills: ["Nginx", "Docker", "Prometheus", "Grafana", "Git", "Github", "GitHub Actions"],
     },
-    { title: "Tools", icon: "code", skills: ["Figma", "Notion", "Swagger"] },
+    { title: "Tools", skills: ["Figma", "Notion", "Swagger"] },
   ],
   sys: [
     {
       title: "Virtualization",
-      icon: "server",
       skills: ["Proxmox VE", "KVM", "LXC", "PCI Passthrough", "Docker"],
     },
     {
       title: "OS",
-      icon: "terminal",
       skills: ["Linux (Debian, Ubuntu)", "systemd", "Shell Script", "Windows"],
     },
     {
       title: "Storage / Network",
-      icon: "database",
       skills: ["NFS", "SMB", "Snapshot", "Nginx", "HTTPS (Let's Encrypt)", "VPN", "SSH"],
     },
     {
       title: "Monitoring / Automation",
-      icon: "cloud",
       skills: ["Prometheus", "Grafana", "GitHub Actions", "Git"],
     },
   ],
@@ -280,6 +292,11 @@ export const skills = {
 export const certificates = [
   { name: "SQL 개발자(SQLD)", date: "2025.04" },
   { name: "정보처리기사", date: "2025.06" },
+];
+
+export const awards = [
+  { name: "교내 우수 논문상", detail: "출품작 : 만수무강", date: "2023.08" },
+  { name: "최우등 졸업", detail: "동국대학교 WISE 캠퍼스" },
 ];
 
 export const education = [

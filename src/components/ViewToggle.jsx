@@ -1,15 +1,15 @@
 import { views } from "@/data/portfolio";
 
 const ViewToggle = ({ view, onChange }) => (
-  <div className="inline-flex p-1 bg-gray-100 rounded-lg">
+  <div className="inline-flex p-1 bg-slate-200/70 rounded-xl">
     {views.map((item) => (
       <button
         key={item.id}
         onClick={() => onChange(item.id)}
-        className={`px-4 py-2 text-sm rounded-md transition-colors ${
+        className={`px-4 py-2 text-sm font-semibold rounded-lg transition-colors ${
           view === item.id
-            ? "bg-white text-blue-800 shadow-sm"
-            : "text-gray-500 hover:text-blue-600"
+            ? "bg-white text-indigo-600 shadow-sm"
+            : "text-slate-500 hover:text-slate-900"
         }`}
       >
         {item.label}
