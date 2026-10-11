@@ -282,19 +282,6 @@ export const certificates = [
   { name: "정보처리기사", date: "2025.06" },
 ];
 
-export const activities = [
-  {
-    name: "우아한테크코스 7기 프리코스",
-    detail: "Java 미션 4주 수행 (계산기, 자동차 경주, 로또, 편의점)",
-    date: "2024.10 - 2024.11",
-  },
-  {
-    name: "인프런 스프링 강의 수강",
-    detail: "스프링 강의 수강 및 실습 코드 정리",
-    date: "2024.09 - 2024.11",
-  },
-];
-
 export const education = [
   {
     school: "동국대학교 WISE 캠퍼스",

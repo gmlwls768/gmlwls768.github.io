@@ -28,7 +28,6 @@ import {
   projects,
   skills,
   certificates,
-  activities,
   education,
 } from "@/data/portfolio";
 
@@ -212,22 +211,6 @@ export default function Portfolio() {
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
-
-            {/* Activities Section */}
-            <section id="activities" className="space-y-4">
-              <h2 className="pb-2 text-2xl font-bold border-b">활동 / 학습</h2>
-              <div className="space-y-4">
-                {activities.map((activity) => (
-                  <div key={activity.name} className="flex justify-between">
-                    <div>
-                      <h3 className="font-semibold">{activity.name}</h3>
-                      <p className="text-gray-600">{activity.detail}</p>
-                    </div>
-                    <span className="text-gray-500">{activity.date}</span>
-                  </div>
-                ))}
               </div>
             </section>
 

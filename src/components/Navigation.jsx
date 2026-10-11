@@ -11,7 +11,6 @@ const menuItems = [
   { id: "skills", label: "기술 스택" },
   { id: "certificates", label: "자격증" },
   { id: "awards", label: "수상 경력" },
-  { id: "activities", label: "활동 / 학습" },
   { id: "education", label: "학력 / 교육" },
   
 ];
