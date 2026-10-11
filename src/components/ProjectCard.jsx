@@ -4,10 +4,10 @@ import Image from "next/image";
 
 const ProjectCard = ({
   title,
-  headCount,
-  memberRole,
+  team,
   period,
   role,
+  featureTitle,
   features,
   achievements,
   skills,
@@ -19,11 +19,9 @@ const ProjectCard = ({
       <div className="flex items-start justify-between">
         <div className="flex-col items-center space-y-1">
           <h3 className="text-xl font-bold text-blue-800">{title}</h3>
-          <p className="text-sm text-gray-600">
-            팀원 수 : {headCount}명({memberRole})
-          </p>
+          <p className="text-sm text-gray-600">{team}</p>
         </div>
-        <span className="text-sm text-gray-500">{period}</span>
+        <span className="flex-shrink-0 pl-4 text-sm text-gray-500">{period}</span>
       </div>
 
       <div className="space-y-4">
@@ -32,7 +30,7 @@ const ProjectCard = ({
         </div>
 
         <div>
-          <h4 className="font-semibold text-gray-700">🔍 구현 기능</h4>
+          <h4 className="font-semibold text-gray-700">{featureTitle}</h4>
           <ul className="pl-5 space-y-2 text-gray-600 list-disc">
             {features.map((feature, index) => (
               <li key={index}>{feature}</li>
@@ -52,6 +50,7 @@ const ProjectCard = ({
         )}
 
         {/* 레포지토리 링크를 위로 이동하고 간격 늘림 (mt-6 추가) */}
+        {repositories && (
         <div className="flex flex-wrap items-center gap-4 pt-8">
           <div className="pl-2">
             <p>[README 및 소스코드]</p>
@@ -76,6 +75,7 @@ const ProjectCard = ({
             </Link>
           ))}
         </div>
+        )}
 
         {/* 스킬 목록을 아래로 이동하고 자연스럽게 줄바꿈되도록 수정 */}
         <div>

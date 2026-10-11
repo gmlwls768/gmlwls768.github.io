@@ -3,6 +3,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import ViewToggle from "@/components/ViewToggle";
 
 const menuItems = [
   { id: "about", label: "자기소개" },
@@ -10,11 +11,12 @@ const menuItems = [
   { id: "skills", label: "기술 스택" },
   { id: "certificates", label: "자격증" },
   { id: "awards", label: "수상 경력" },
+  { id: "activities", label: "활동 / 학습" },
   { id: "education", label: "학력 / 교육" },
   
 ];
 
-export default function Navigation() {
+export default function Navigation({ view, onChangeView }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -62,6 +64,7 @@ export default function Navigation() {
         } w-64 h-screen p-6 border-r bg-white z-40`}
       >
         <div className="sticky space-y-4 top-6">
+          <ViewToggle view={view} onChange={onChangeView} />
           <h3 className="mb-6 text-lg font-semibold">목차</h3>
           <ul className="space-y-2">
             {menuItems.map((item) => (
